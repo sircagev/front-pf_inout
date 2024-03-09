@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
-import { Sidebar } from './components/Sidebar'
-import { Navbar } from './components/Navbar'
+import { Sidebar } from './components/organismos/Sidebar'
+import { Navbar } from './components/organismos/Navbar'
 import Elementos from './views/Elementos'
 
 import './style.css'

@@ -1,5 +1,5 @@
 import React from 'react'
-import bell from '../assets/bell.svg'
+import bell from '../../assets/bell.svg'
 
 export const Navbar = () => {
   return (
