@@ -6,7 +6,7 @@ import { Navbar } from './components/organismos/Navbar'
 
 
 
-import Elementos from './views/Elementos'
+import {Elementos} from './views/Elementos'
 import Bodegas from './views/Bodegas'
 import Dashboard from './views/Dashboard'
 import Reportes from './views/Reportes'
