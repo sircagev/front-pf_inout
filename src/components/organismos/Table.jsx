@@ -36,6 +36,7 @@ export const Table = () => {
                         </button>
                     </td>
                 </tr>
+                
                 </tbody>
             </table>
     </div>
