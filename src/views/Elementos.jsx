@@ -1,11 +1,15 @@
 import React from 'react'
-import { Sidebar } from '../components/organismos/Sidebar'
-import { Navbar } from '../components/organismos/Navbar'
+import { Table } from '../components/organismos/Table'
+import { TableHidder } from '../components/organismos/TableHidder'
 
-export default function Elementos() {
+
+export const Elementos = () => {
   return (
-    <div>
-        <h1>Hola</h1>
+    <div className='w-full flex flex-col items-center mt-10'>
+        <div className='w-[90%]'>
+            <TableHidder/>
+            <Table/>        
+        </div>
     </div>
   )
 }
