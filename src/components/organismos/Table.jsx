@@ -20,7 +20,7 @@ export const Table = () => {
                 </thead>
                 <tbody>
                 <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                    <td class="py-4 px-6">Alex Johnson</td>
+                    <td class="py-4 px-6">Alex jajaja</td>
                     <td class="py-4 px-6">82926417</td>
                     <td class="py-4 px-6">$4,500.00</td>
                     <td class="py-4 px-6">Yes</td>
