@@ -1,6 +1,6 @@
 import React from 'react'
-import { Sidebar } from '../components/Sidebar'
-import { Navbar } from '../components/Navbar'
+import { Sidebar } from '../components/organismos/Sidebar'
+import { Navbar } from '../components/organismos/Navbar'
 
 export default function Elementos() {
   return (
