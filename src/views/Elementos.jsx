@@ -5,18 +5,22 @@ import Table2 from '../components/organismos/Table2'
 
 export const Elementos = () => {
 
-  const columnsInfo = ['Codigo','Nombre','Stock','Tipo','Vencimiento','Categoria','Detalle Ubicacion']
-  const dataInfo = [ {'Codigo': 23,'Nombre':23,'Stock':445,'Tipo':565,'Vencimiento':657,'Categoria':65757,'Detalle Ubicacion':474},
-  {'Codigo': 23,'Nombre':23,'Stock':445,'Tipo':565,'Vencimiento':657,'Categoria':65757,'Detalle Ubicacion':474},
-  {'Codigo': 23,'Nombre':23,'Stock':445,'Tipo':565,'Vencimiento':657,'Categoria':65757,'Detalle Ubicacion':474} ]
+  const columns =['Codigo','Nombre','Stock','Tipo','Vencimiento','Categoria','Detalle Ubicacion']
+  const dataInfo =[{
+    Codigo: '001',
+    Nombre:'Pala',
+    Stock: 30,
+    Tipo: 'Devolutivo',
+    Vencimiento: 'No tiene',
+    Categoria: 'Herramientas',
+    "Detalle Ubicacion": 'No sabemos'}]
+
   return (
     <div className='w-full flex flex-col items-center mt-10'>
         <div className='w-[90%]'>
-            <TableHidder/>
-            <Table/> 
-            <Table2 columns={columnsInfo} data={dataInfo}></Table2>       
+            <TableHidder title="Todos los elementos" subtitle="Elementos Activos"/>
+            <Table2 columns={columns} data={dataInfo}/>     
         </div>
-        
     </div>
   )
 }
