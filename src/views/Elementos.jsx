@@ -6,8 +6,19 @@ import Modal from 'react-modal';
 
 
 
-export const Elementos = () => {
+const Elementos = () => {
 
+  const columns = ['Codigo', 'Nombre', 'Stock', 'Tipo', 'Vencimiento', 'Categoria', 'Detalle Ubicacion']
+  const dataInfo = [{
+    Codigo: '001',
+    Nombre: 'Pala',
+    Stock: 30,
+    Tipo: 'Devolutivo',
+    Vencimiento: 'No tiene',
+    Categoria: 'Herramientas',
+    "Detalle Ubicacion": 'No sabemos'
+  }]
+  
     const [modalIsOpen, setIsOpen] = React.useState(false);
 
     const customStyles = {
@@ -116,6 +127,12 @@ export const Elementos = () => {
             <TableHidder/>
             <Table/> 
         </div>
+    <div className='max-w-9/10'>
+      <TableHidder title="Todos los elementos" subtitle="Elementos Activos" />
+      <Table2 columns={columns} data={dataInfo} />
+
     </div>
   )
 }
+
+export default Elementos

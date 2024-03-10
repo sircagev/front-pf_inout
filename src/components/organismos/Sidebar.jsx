@@ -10,12 +10,12 @@ import LiUnique from '../../components/moleculas/LiUnique'
 export const Sidebar = () => {
 
   return (
-    <div className='w-[306px] h-screen bg-[#fff]'>
-      <div className='flex gap-4 ml-5'>
-        <img src={logo} className='w-[60px] mt-5' alt="" />
-        <h1 className='text-[26px] mt-8 font-bold'>InOut</h1>
+    <div className='w-[250px] h-screen bg-[#fff] flex flex-col'>
+      <div className='flex gap-4 pl-5 w-full'>
+        <img src={logo} className='w-[60px] pt-5' alt="" />
+        <h1 className='text-[26px] pt-8 font-bold'>InOut</h1>
       </div>
-      <nav className='mt-[50px] ml-6 text-[16px] font-semibold text-[#6c6d74]'>
+      <nav className='w-full pt-[50px] pl-6 text-[16px] font-semibold text-[#6c6d74]'>
         <ul>
           <LiUnique label="Dashboard" icono={MdDashboard} ruta="/dashboard" />
           <LiUnique label="Usuarios" icono={FaUser} ruta="/usuarios"/>
