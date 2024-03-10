@@ -43,7 +43,8 @@ const Elementos = () => {
   }
 
   return (
-    <div className='w-full flex flex-col items-center mt-10'>
+    <>
+      <div className='w-full flex flex-col items-center mt-10'>
         <div className='w-[90%]'>
             <Modal
             isOpen={modalIsOpen}
@@ -127,11 +128,13 @@ const Elementos = () => {
             <TableHidder/>
             <Table/> 
         </div>
+    </div>
     <div className='max-w-9/10'>
       <TableHidder title="Todos los elementos" subtitle="Elementos Activos" />
       <Table2 columns={columns} data={dataInfo} />
 
     </div>
+    </>
   )
 }
 
