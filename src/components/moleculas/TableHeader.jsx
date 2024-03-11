@@ -6,6 +6,7 @@ const TableHeader = ({columns}) => {
             <tr>
                 {columns.map((column, index) => (
                     <th key={index} scope="col" className={`text-center py-3 px-6`}>
+
                         {column}
                     </th>
                 ))}
