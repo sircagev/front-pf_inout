@@ -10,7 +10,7 @@ import LiUnique from '../../components/moleculas/LiUnique'
 export const Sidebar = () => {
 
   return (
-    <div className='w-[250px] h-screen bg-[#fff] flex flex-col'>
+    <div className='sm:w-[250px] h-screen lg:w-[306px] bg-[#fff] flex flex-col'>
       <div className='flex gap-4 pl-5 w-full'>
         <img src={logo} className='w-[60px] pt-5' alt="" />
         <h1 className='text-[26px] pt-8 font-bold'>InOut</h1>
