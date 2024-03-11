@@ -4,27 +4,29 @@ import { TableHidder } from '../components/organismos/TableHidder'
 import { ListarReservas } from '../functions/ReservaFunctions'
 
 const Reservas = () => {
-
-  const columnsInfo = ['Codigo Reserva', 'Usuario', 'Telefono', 'Detalles', 'Observaciones']
-  const dataINfo = [{ reservas: 2, reservas2: 1 }, { reservas: 2, reservas2: 1 }]
   
-  const [ reservas , UseReservas ] = useState([]);
+  const [ reservas , setReservas ] = useState([]);
+  const [columnsHeader,setColumnsHeader] = useState([]);
 
   const fetchData = async() => {
     try {
-      const reservaInfo = await ListarReservas();
+      const responseReserva = await ListarReservas();
+      const reservasInfo = responseReserva.reservas;
+      setReservas(reservasInfo);
+      setColumnsHeader(Object.keys(reservasInfo[0]))
     } catch (error) {
-      
+      console.log(error)
     }
   }
 
   useEffect(()=> {
     fetchData();
-  })
+  },[]);
+  
   return (
     <div className='w-[90%] overflow-hidden'>
       <TableHidder title="Todas las Reservas" subtitle="Reservas Activas" />
-      <Table2 columns={columnsInfo} data={dataINfo} />
+      <Table2 columns={columnsHeader} data={reservas} />
     </div>
   )
 }
