@@ -5,7 +5,7 @@ const TableBody = ({ data, columns }) => (
     {data.map((row, rowIndex) => (
       <tr key={rowIndex} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
         {columns.map((column, columnIndex) => (
-          <td key={columnIndex} className={`py-4 px-6 ${columnIndex === 5 || columnIndex === 6 ? "sm:hidden" : ""}`}>
+          <td key={columnIndex} className={`py-4 px-6`}>
             {row[column]}
           </td>
         ))}
